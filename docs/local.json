@@ -1,0 +1,41 @@
+{
+  "title": "OpenWordnet-PT",
+  "name": "OWN-PT",
+  "tagline": "An open wordnet for Portuguese",
+  "icon": "ownpt-baselogo.png",
+
+  "searchLanguage": ["pt", "en"],
+  "displayLanguage": "pt",
+
+  "databases": {
+    "main": {
+      "filename": "pt-cygnet.db.gz",
+      "url": "https://github.com/omwn/openWordnet-PT/releases/latest/download/pt-cygnet.db.gz",
+      "description": "The main OWN-PT lexical database, containing synsets, entries, senses, definitions, and examples, linked to English."
+    },
+    "provenance": {
+      "filename": "pt-provenance.db.gz",
+      "url": "https://github.com/omwn/openWordnet-PT/releases/latest/download/pt-provenance.db.gz",
+      "description": "Provenance records tracing every data point back to its source and original identifier."
+    }
+  },
+
+  "logo": {
+    "src":  "img/omw-logo.svg",
+    "url":  "https://omwn.org",
+    "alt":  "Open Multilingual Wordnet",
+    "name": "OMW"
+  },
+
+  "footer": "Built by Alexandre Rademaker, Valeria de Paiva, and contributors.",
+
+  "about": {
+    "intro": "<p>OpenWordnet-PT is a freely available semantic dictionary of the Portuguese language, part of the Open Multilingual Wordnet. It is developed collaboratively using a web interface and linked to Princeton WordNet.</p><p>Source code on <a href='https://github.com/omwn/openWordnet-PT' style='text-decoration:underline'>GitHub</a>.</p>",
+    "citation": "If you use OpenWordnet-PT, please cite Rademaker et al. (2012).  For the interface, please cite Maudslay and Bond (2026).",
+    "languageData": "OpenWordnet-PT covers Brazilian and European Portuguese, linked to Princeton WordNet synsets via the ILI."
+  },
+
+  "publications": [
+    "Alexandre Rademaker, Valeria de Paiva, Livy Real, Claudia Freitas, Hugo Gonçalo Oliveira, Alberto Simões and Fabricio Chalub (2012) <a href='http://arademaker.github.io/bibliography/coling2012.html'>OpenWordnet-PT: An Open Brazilian Wordnet for Reasoning</a>. In Proceedings of COLING 2012."
+  ]
+}

@@ -1,0 +1,6 @@
+# Wordnets to include in the openWordnet-PT Cygnet build.
+# OEWN is required as the structural English base; own-en adds the
+# OWN-PT English annotations on top.  Portuguese is the primary resource.
+en = ["https://en-word.net/static/english-wordnet-2025-plus.xml.gz",
+      "https://github.com/omwn/openWordnet-PT/releases/latest/download/own-en-2026.04.07.tar.xz"]
+pt = ["https://github.com/omwn/openWordnet-PT/releases/latest/download/own-pt-2026.04.07.tar.xz"]
