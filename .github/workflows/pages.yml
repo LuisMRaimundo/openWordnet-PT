@@ -47,7 +47,7 @@ jobs:
         if: steps.cache-db.outputs.cache-hit != 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh release download --repo ${{ github.repository }} --tag ${{ steps.release.outputs.tag }} --pattern "*.db.gz" --dir docs/
+        run: gh release download ${{ steps.release.outputs.tag }} --repo ${{ github.repository }} --pattern "*.db.gz" --dir docs/
 
       - uses: actions/configure-pages@v5
 
