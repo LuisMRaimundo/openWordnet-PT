@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OpenWordnet-PT — consulta local</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand" id="go-home">
+      <span class="mark">WN</span>
+      <div>
+        <strong>OpenWordnet-PT</strong>
+        <small id="tagline">Consulta local do repositório semântico</small>
+      </div>
+    </div>
+    <form class="search" id="search-form" autocomplete="off">
+      <input id="q" type="search" placeholder="lema, expressão ou identificador (00001740-n)" autofocus>
+      <select id="lang">
+        <option value="all">PT + EN</option>
+        <option value="pt">português</option>
+        <option value="en">inglês</option>
+      </select>
+      <select id="pos">
+        <option value="">todas as classes</option>
+        <option value="n">substantivo</option>
+        <option value="v">verbo</option>
+        <option value="a">adjetivo</option>
+        <option value="s">adj. satélite</option>
+        <option value="r">advérbio</option>
+      </select>
+      <select id="mode">
+        <option value="prefix">começa por</option>
+        <option value="exact">exacto</option>
+        <option value="contains">contém</option>
+      </select>
+      <button type="submit">Procurar</button>
+    </form>
+    <div class="tools">
+      <button type="button" id="random-btn" title="Synset aleatório">acaso</button>
+      <button type="button" id="ui-lang" title="Língua da interface">PT</button>
+    </div>
+  </header>
+  <div id="suggest" class="suggest" hidden></div>
+  <main id="main"></main>
+  <footer>
+    Índice local dos RDF em <code>data/</code> · independente de openwordnet-pt.org e do Cygnet
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
