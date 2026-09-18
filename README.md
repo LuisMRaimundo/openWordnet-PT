@@ -6,6 +6,20 @@
 - You can browse or search the data in our
   [web interface](http://openwordnet-pt.org).
 
+- For an **independent local interface** over the RDF files in this
+  repository (no Cygnet build, no website, Python standard library
+  only), run:
+
+      run.bat
+      python consult_ownpt.py
+
+  The first launch builds a SQLite index from `data/*.ttl`. Afterwards
+  the browser opens at `http://127.0.0.1:8765`. Search Portuguese or
+  English lemmas, filter by POS, follow hypernyms and other relations,
+  and open a random synset. Use `--rebuild` to refresh the index after
+  RDF changes, `--query casa` for a terminal search, or `--help` for
+  all options. Details: [consult/README.md](consult/README.md).
+
 - You can download the RDF files and load it with any RDF library
   available for your preferable programming language.
 
@@ -56,7 +70,7 @@ See http://arademaker.github.io/bibliography/coling2012.html
 ## How to contribute?
 
 Please use the GitHub
-[issues]([https://github.com/own-pt/openWordnet-PT/issues) or use the
+[issues](https://github.com/own-pt/openWordnet-PT/issues) or use the
 [web interface](http://wnpt.brlcloud.com/wn/) to make suggestions
 about the data.
 
